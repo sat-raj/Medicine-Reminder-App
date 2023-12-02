@@ -1,0 +1,283 @@
+/* App.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff6a88, #ff9a8b); /* Gradient background */
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* Set a fixed height for the body */
+  overflow: auto;
+  margin: 0;
+}
+
+.reminder-form {
+  
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 450px;
+  text-align: center;
+}
+
+/* Style buttons */
+button {
+  padding: 8px 16px; /* Add padding to all buttons */
+  margin: 5px; /* Add margin to separate buttons */
+  background-color: #ff9a8b; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #ff6a88; /* Hover background color */
+}
+
+/* Slide-out animation */
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+/* Apply slide-out animation to deleted items */
+.slide-out {
+  animation: slideOut 0.5s ease-in-out;
+}
+
+/* Style delete buttons */
+.delete-dose-btn,
+.delete-time-btn {
+  background-color: #ff3f3f; /* Delete button background color */
+  color: white;
+}
+
+/* Style form input fields */
+input[type="text"],
+input[type="number"],
+input[type="time"] {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Dose and time input containers */
+.dose-input,
+.time-input {
+  margin-top: 10px;
+  position: relative;
+}
+
+/* Dose header with delete button */
+.dose-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Additional styling can be added as needed */
+
+/* Dose and time input containers */
+.dose-input,
+.time-input {
+  margin-top: 10px;
+  position: relative;
+}
+
+/* Dose header with delete button */
+.dose-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Additional styling can be added as needed */
+
+/* Style medicine reminders */
+.medicine-reminders {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-height: 400px; /* Set a maximum height for the container */
+  overflow: auto; /* Enable scrolling when content exceeds the container */
+}
+
+/* Style individual medicine reminder */
+.medicine-reminder {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style medicine name */
+.medicine-name {
+  font-weight: bold;
+}
+
+/* Style dose and times */
+.dose-times {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Style dose */
+.dose {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style time */
+.time {
+  font-size: 12px;
+}
+
+/* Add a bit more space between reminders */
+
+/* Add this CSS to your stylesheet or style section */
+
+/* Add this CSS to your stylesheet or style section */
+
+.weekday-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the tiles horizontally */
+  gap: 10px; /* Add more margin between tiles */
+}
+
+.weekday-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Increase tile width */
+  height: 60px; /* Increase tile height */
+  margin: 10px; /* Increase margin around tiles */
+  border: 2px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; /* Add transitions for smooth effects */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+
+.weekday-tile.selected {
+  background-color: #007bff; /* Change background color on click */
+  color: #fff;
+  border-color: #007bff; /* Change border color on click */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); /* Change box shadow on click */
+}
+
+.weekday-tile input {
+  display: none;
+}
+.LandG
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  
+}
+.registration,
+.login {
+  width: 500px;
+  height: 300px;
+  margin: 50px;
+  
+   /* Arrange them horizontally */
+  padding: 70px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: transparent; /* Make the background color transparent */
+}
+
+.registration {
+ 
+  
+  border: 2px solid #3498db; /* Add a border to the registration box */
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #e74c3c; /* Add a border to the login box */
+
+}
+
+
+.LandGInput {
+  padding: 10px;
+  margin: 10px;
+  border: none; /* Remove the border */
+  border-radius: 5px;
+  width: 100%;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+  color: #000; /* Text color in black */
+}
+
+.registration
+.LandGInput {
+  padding: 10px;
+  margin: 10px;
+  border: none; 
+  border-radius: 5px;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.3); 
+  color: #000; 
+} 
+
+.error-message {
+  color: red;
+  margin: 10px;
+}
+
+
+/* Add this CSS in your main stylesheet or in a separate CSS file */
+.message-box {
+  width: 100%;
+  height: 150px; /* Adjust the height as needed */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical; /* Allow vertical resizing */
+  margin-bottom: 20px;
+}
+
+/* Optionally, you can style the button */
+.notification-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notification-form button:hover {
+  background-color: #0056b3;
+}
