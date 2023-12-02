@@ -33,7 +33,7 @@ The Medicine Reminder App stands out from other similar apps due to its distinct
 
 **Feedback and Contributions:** We welcome feedback, suggestions, and contributions from users and developers to enhance the app's functionality and user experience.
 
-For more information or support, please contact [support@example.com].
+For more information or support, please contact [satyamraj999@gmail.com].
 
 **Disclaimer:** This app does not replace professional medical advice. Always consult your healthcare provider for medical guidance and decisions.
 
